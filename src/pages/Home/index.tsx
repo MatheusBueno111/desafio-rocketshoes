@@ -30,12 +30,7 @@ const Home = (): JSX.Element => {
     return sumAmount
 
   }, {} as CartItemsAmount)
-
-  console.log('cartItemsAmount', cartItemsAmount)
-  // useEffect(() => {
-  //   console.log('cartItemsAmoun :>>',cartItemsAmount)
-  // },[cartItemsAmount])
-
+  
   useEffect(() => {
     async function loadProducts() {
       const response = await api.get('/products')
